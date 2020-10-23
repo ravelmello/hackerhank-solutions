@@ -10,7 +10,7 @@ import java.util.List;
 public class DiagonalDifference {
 
     static int diagonalDiff(List<List<Integer>> arr){
-        showMultiDArray(arr);
+        showMultiDimensionalArray(arr);
         int leftD = 0, rightD = 0;
         for(int i = 0, j = arr.get(0).size()-1; i < arr.get(0).size(); i++, j--){
             leftD = leftD + arr.get(i).get(i);
@@ -19,7 +19,7 @@ public class DiagonalDifference {
         return Math.abs(leftD - rightD);
     }
 
-    static void showMultiDArray(List<List<Integer>> arr){
+    static void showMultiDimensionalArray(List<List<Integer>> arr){
         for(int i = 0; i < arr.get(0).size(); i++){
             for(int j = 0; j < arr.get(0).size(); j++){
                 System.out.print("\t" + arr.get(i).get(j) +"\t");
