@@ -19,7 +19,7 @@ public class Person {
     }
 
     public void yearPasses(){
-        age++;
+        this.age++;
     }
 
     public void amIOld(){
@@ -33,14 +33,14 @@ public class Person {
     }
 
     public static void main(String[] args) {
-         Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
         int T = scan.nextInt();
 
          for(int i = 0; i < T; i++) {
             age = scan.nextInt();
             Person p = new Person(age);
-            p.amIOld();
 
+            p.amIOld();
             for( int j = 0; j < 3; j++ ){
                 p.yearPasses();
             }
